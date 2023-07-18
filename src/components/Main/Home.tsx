@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <div className='m-5 flex flex-col justify-center items-center font-sans'>
       <div className='flex flex-row gap-2'>
-        <h1 className='m-2 text-4xl font-bold'>Frontend Mini Challenges</h1>
+        <h1 className='m-2 text-4xl font-bold'>Frontend Mini Challenges - ReactJS Version</h1>
         <Link to={'https://github.com/Prathameshp98'}>
           <img className='w-10 h-10 mt-2' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" />
         </Link>
