@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Counter",
+        "difficulty": "easy",
+        "isNew": true,
+        "slug": "counter"
+    },
+    {
+        "id": 2,
+        "name": "Accordion",
+        "difficulty": "easy",
+        "isNew": true,
+        "slug": "accordion"
+    },
+    {
+        "id": 3,
+        "name": "Star Rating",
+        "difficulty": "easy",
+        "isNew": true,
+        "slug": "star-rating"
+    },
+    {
+        "id": 4,
+        "name": "Light Dark Mode",
+        "difficulty": "easy",
+        "isNew": true,
+        "slug": "light-dark-mode"
+    }
+]
