@@ -1,6 +1,7 @@
 {
   "name": "reactjs-mini-challenges",
   "version": "0.1.0",
+  "homepage": "https://prathameshp98.github.io/reactjs-mini-challenges/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.15",
