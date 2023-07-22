@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useState } from 'react'
 const Header = React.lazy(() => import('../Includes/Header'))
 
 const Counter = React.lazy(() => import('../Challenges/Counter/Counter'))
+const Accordion = React.lazy(() => import('../Challenges/Accordion/Accordion'))
 
 const Challenge: React.FC = () => {
 
@@ -18,6 +19,7 @@ const Challenge: React.FC = () => {
             <Suspense fallback={<div></div>}>
                 <Header />
                 {slug === 'counter' && <Counter />}
+                {slug === 'accordion' && <Accordion />}
             </Suspense>
         </div>
     )
