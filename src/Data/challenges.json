@@ -22,6 +22,13 @@
     },
     {
         "id": 4,
+        "name": "Stopwatch",
+        "difficulty": "easy",
+        "isNew": true,
+        "slug": "stopwatch"
+    },
+    {
+        "id": 5,
         "name": "Light Dark Mode",
         "difficulty": "easy",
         "isNew": true,
