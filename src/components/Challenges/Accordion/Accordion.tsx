@@ -11,7 +11,7 @@ const data = [
     title: 'Section 2',
     content: 'Elit ut aliquam purus sit amet luctus venenatis lectus magna. Metus aliquam eleifend mi in nulla posuere. Integer eget aliquet nibh praesent tristique magna sit.'
   },
-  {
+  { 
     id: 3,
     title: 'Section 3',
     content: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'

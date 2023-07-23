@@ -4,6 +4,7 @@ const Header = React.lazy(() => import('../Includes/Header'))
 
 const Counter = React.lazy(() => import('../Challenges/Counter/Counter'))
 const Accordion = React.lazy(() => import('../Challenges/Accordion/Accordion'))
+const StarRating = React.lazy(() => import('../Challenges/Star Rating/StarRating'))
 
 const Challenge: React.FC = () => {
 
@@ -20,6 +21,7 @@ const Challenge: React.FC = () => {
                 <Header />
                 {slug === 'counter' && <Counter />}
                 {slug === 'accordion' && <Accordion />}
+                {slug === 'star-rating' && <StarRating />}
             </Suspense>
         </div>
     )
