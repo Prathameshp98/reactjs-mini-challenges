@@ -27,7 +27,7 @@ const timeReducer = (state: timeState, action: timeAction) => {
         case 'TICK': {
             let hours:number = state.hours;
             if(state.minutes + 1 === 60){
-                hours = state.hours + 1;
+                hours = state.hours + 1; 
             }
             let minutes:number = state.minutes;
             if(state.second + 1 === 60){
