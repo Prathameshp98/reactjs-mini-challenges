@@ -1,34 +1,34 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "name": "Counter",
         "difficulty": "easy",
         "isNew": true,
         "slug": "counter"
     },
     {
-        "id": 2,
+        "id": 0,
         "name": "Accordion",
         "difficulty": "easy",
         "isNew": true,
         "slug": "accordion"
     },
     {
-        "id": 3,
+        "id": 0,
         "name": "Star Rating",
         "difficulty": "easy",
         "isNew": true,
         "slug": "star-rating"
     },
     {
-        "id": 4,
+        "id": 0,
         "name": "Stopwatch",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "isNew": true,
         "slug": "stopwatch"
     },
     {
-        "id": 5,
+        "id": 0,
         "name": "Light Dark Mode",
         "difficulty": "easy",
         "isNew": true,

@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-const Home = React.lazy(() => import('./components/Main/Home'))
-const Challenge = React.lazy(() => import('./components/Main/Challenge'))
+const Home = React.lazy(() => import('./components/Main/Home/Home'))
+const Challenge = React.lazy(() => import('./components/Main/Challenge/Challenge'))
 
 import './App.css';
 

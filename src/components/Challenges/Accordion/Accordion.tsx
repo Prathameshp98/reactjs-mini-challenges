@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import Button from '../../atoms/Button/Button'
 
 const data = [
   {
@@ -59,7 +60,13 @@ const Accordion: React.FC = () => {
         <div key={each.id} className='w-11/12 p-3 flex flex-col gap-3 border-2 border-gray-200'>
           <div className='flex justify-between'>
             <h3 className='text-lg font-bold'>{each.title}</h3>
-            <button onClick={() => toggleVisiblity(each.id)} className='w-8 h-8 rounded-full bg-slate-300'>{visible.includes(each.id) ? '-' : '+'}</button>
+            <Button
+              shape='circle'
+              text={visible.includes(each.id) ? '-' : '+'}
+              textColor='text-black'
+              buttonColor='bg-slate-300'
+              onClick={() => toggleVisiblity(each.id)}
+            />
           </div>
           {visible.includes(each.id) &&
             <div>
