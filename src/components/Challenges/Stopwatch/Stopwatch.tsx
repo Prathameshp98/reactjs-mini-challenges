@@ -1,5 +1,5 @@
-import React, { useReducer, useRef, useEffect } from 'react'
-
+import React, { useReducer, useRef, useEffect } from 'react';
+import Button from '../../atoms/Button/Button';
 interface timeState {
     isRunning: boolean,
     second: number,
@@ -27,7 +27,7 @@ const timeReducer = (state: timeState, action: timeAction) => {
         case 'TICK': {
             let hours:number = state.hours;
             if(state.minutes + 1 === 60){
-                hours = state.hours + 1;
+                hours = state.hours + 1; 
             }
             let minutes:number = state.minutes;
             if(state.second + 1 === 60){
@@ -72,24 +72,27 @@ const Stopwatch: React.FC = () => {
                 <p className='font-bold text-3xl'><span className='text-6xl'>{state.second < 10 ? '0' + state.second : state.second}</span> s</p>
             </div>
             <div className='flex gap-6'>
-                <button 
-                    onClick={() => dispatch({type: 'START'})}
-                    className='py-2 px-6 font-medium text-lg rounded bg-lime-600 text-white'
-                >
-                    Start
-                </button>
-                <button 
-                    onClick={() => dispatch({type: 'STOP'})}
-                    className='py-2 px-6 font-medium text-lg rounded bg-red-600 text-white'
-                >
-                    Stop
-                </button>
-                <button 
+                <Button
+                    shape='rectangle'
+                    text='Start'
+                    textColor='text-white'
+                    buttonColor='bg-lime-600'
+                    onClick={() => dispatch({type: 'START'})} 
+                />
+                <Button
+                    shape='rectangle'
+                    text='Stop'
+                    textColor='text-white'
+                    buttonColor='bg-red-600'
+                    onClick={() => dispatch({type: 'STOP'})} 
+                />
+                <Button
+                    shape='rectangle'
+                    text='Reset'
+                    textColor='text-white'
+                    buttonColor='bg-yellow-500'
                     onClick={() => dispatch({type: 'RESET'})}
-                    className='py-2 px-6 font-medium text-lg rounded bg-yellow-500 text-white'
-                >
-                    Reset
-                </button>
+                />
             </div>
         </div>
     )

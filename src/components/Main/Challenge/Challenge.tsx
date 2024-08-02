@@ -1,12 +1,11 @@
 import React, { Suspense, useEffect, useState } from 'react'
 
-const Header = React.lazy(() => import('../Includes/Header'))
+const Header = React.lazy(() => import('../../common/Header'));
 
-const Counter = React.lazy(() => import('../Challenges/Counter/Counter'))
-const Accordion = React.lazy(() => import('../Challenges/Accordion/Accordion'))
-const StarRating = React.lazy(() => import('../Challenges/Star Rating/StarRating'))
-const Stopwatch = React.lazy(() => import('../Challenges/Stopwatch/Stopwatch'))
-const LightDarkTheme = React.lazy(() => import ('../Challenges/Light Dark Theme/LightDarkTheme'))
+const Counter = React.lazy(() => import('../../Challenges/Counter/Counter'))
+const Accordion = React.lazy(() => import('../../Challenges/Accordion/Accordion'))
+const StarRating = React.lazy(() => import('../../Challenges/Star Rating/StarRating'))
+const Stopwatch = React.lazy(() => import('../../Challenges/Stopwatch/Stopwatch'))
 
 const Challenge: React.FC = () => {
 
