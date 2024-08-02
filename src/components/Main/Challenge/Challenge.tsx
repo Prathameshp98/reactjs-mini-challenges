@@ -24,6 +24,7 @@ const Challenge: React.FC = () => {
                 {slug === 'accordion' && <Accordion />}
                 {slug === 'star-rating' && <StarRating />}
                 {slug === 'stopwatch' && <Stopwatch />}
+                {slug === 'light-dark-theme' && <LightDarkTheme/> }
             </Suspense>
         </div>
     )
