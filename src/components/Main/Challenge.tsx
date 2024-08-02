@@ -6,6 +6,7 @@ const Counter = React.lazy(() => import('../Challenges/Counter/Counter'))
 const Accordion = React.lazy(() => import('../Challenges/Accordion/Accordion'))
 const StarRating = React.lazy(() => import('../Challenges/Star Rating/StarRating'))
 const Stopwatch = React.lazy(() => import('../Challenges/Stopwatch/Stopwatch'))
+const LightDarkTheme = React.lazy(() => import ('../Challenges/Light Dark Theme/LightDarkTheme'))
 
 const Challenge: React.FC = () => {
 
@@ -24,6 +25,7 @@ const Challenge: React.FC = () => {
                 {slug === 'accordion' && <Accordion />}
                 {slug === 'star-rating' && <StarRating />}
                 {slug === 'stopwatch' && <Stopwatch />}
+                {slug === 'light-dark-theme' && <LightDarkTheme/> }
             </Suspense>
         </div>
     )
